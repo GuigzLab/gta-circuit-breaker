@@ -48,7 +48,7 @@ class Player {
           // TODO - Detect direction changes and draw rectangles
           const actualPos = JSON.stringify(this.position)
           if (!this.path.includes(actualPos)){
-               // this.path.push(actualPos)
+               this.path.push(actualPos)
           }
           this.draw()
      }
