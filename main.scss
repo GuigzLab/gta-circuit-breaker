@@ -36,3 +36,11 @@ body {
           text-transform: uppercase;
      }
 }
+
+canvas {
+     display: block;
+     margin: 5rem auto;
+     width: 60vw;
+     height: calc(60vw / 16 * 9);
+     border: 3px solid $primary;
+}
