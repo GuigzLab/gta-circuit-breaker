@@ -1,0 +1,24 @@
+[{
+     "startPort": {
+          "x": -10,
+          "y": 70,
+          "rotation": 0
+     },
+     "endPort": {
+          "x": 200,
+          "y": -5,
+          "rotation": 90
+     },
+
+     "start": {
+          "x": 10,
+          "y": 70
+     },
+
+     "speed": 1.5,
+     "velocity": {
+          "x": 1.5,
+          "y": 0
+     },
+     "map": "map1.txt"
+}]
