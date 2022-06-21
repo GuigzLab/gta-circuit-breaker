@@ -37,10 +37,58 @@ body {
      }
 }
 
-canvas {
+.canvas-container {
      display: block;
      margin: 5rem auto;
+     position: relative;
      width: 60vw;
      height: calc(60vw / 16 * 9);
-     border: 3px solid $primary;
+     width: fit-content;
+     height: fit-content;
+     
+     canvas {
+          border: 3px solid $primary;
+     }
+
+     h3 {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          font-family: $ff-primary;
+          color: $primary;
+          font-size: 2rem;
+          background-color: rgba(0, 0, 0, 0.301);
+          display: block;
+          height: 3rem;
+          width: 100%;
+          display: grid;
+          align-items: center;
+          justify-content: center;
+          user-select: none;
+          transition: opacity .1s ease-out;
+     }
+
+     .start {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 55px;
+          height: 80px;
+          background-color: green;
+          display: none;
+     }
+
+     .end {
+          display: block;
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          width: 55px;
+          height: 80px;
+          background-color: red;
+          display: none;
+          transform-origin: bottom right;
+     }
 }
